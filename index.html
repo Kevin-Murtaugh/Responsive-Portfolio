@@ -3,13 +3,57 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>About | Your Name</title>
+
+  <!-- per w3schools.com suggestion  -->
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>About | Kevin Murtaugh</title>
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 </head>
 
 <body>
 
+  <!-- alternate /experiment between container & container-fluid ...   -->
+  <div class="container-fluid">  
+    
+<!-- experiment #1 move masthead & row above navbar, (even though it works ok below exept for LHS spacing)
+swutchng the order fails since it moves masthead to top right of frame -->
+
+    <div class="row">
+      <nav class="navbar navbar-default">
+ <!--          <div class="container">                   not sure why I ended up with container inside container ...  -->
+    <div class="masthead">
+      <div class="row">
+               
+            <div class="navbar-header">
+<!-- use this line to add teal block & name  -->
+              <a href="index.html" id="logo">Kevin Murtaugh</a>
+<!-- which replaces this line...                   -->
+<!--          <a class="navbar-brand" href="#"><h1>Kevin Murtaugh</h1></a>   -->
+            </div>
+                      <ul class="nav navbar-nav">
+<!--                <li class="active"><a href="index.html">Home</a></li>      -->
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                      </ul>
+          </div>
+        <div>
+      <nav>
+    </div>
+  </div>
+<!--
   <header id="masthead">
     <div class="container">
       <a href="index.html" id="logo">Kevin Murtaugh</a>
@@ -20,18 +64,31 @@
       </nav>
     </div>
   </header>
+-->
 
   <div id="main-container" class="container">
     <section class="main-section">
       <h1>About Me</h1>
 
-      <img src="assets/images/portrait1.jpg.jpg" style="width:150px; height:180px" alt="Kevin Murtaugh">
+      <div class="row">
+        <div class="col-xs-12" "col-sm-12" "col-md-8" "col-lg-8">
 
+      <img src="assets/images/portrait1.jpg.jpg" style="width:150px; height:180px" alt="Kevin Murtaugh">
+          </div>
+      </div>
+
+      <div class-"row">
+        <div class="col-xs-12" "col-sm-12" "col-md-8" "col-lg-8">
+
+      <br>
       <p>Deeply experienced semiconductor professional adept at solving design challenges for Fortune 500 firms. Technical Sales, Operations, Business Development and even Technical Marketing roles filled effectively to drive company growth.</p>
 
       <p>Rugby player across five decades, stepped up to club management and state-level union management roles. At the club level, added corporate sponsorships, IRS 501(c)3 certification, social media and advertising while driving the level of play from D3 to D2.  At the state level, added metrics for recrtuitment, travel, and national progression as tools for Florida to improve their national ranking. </p>
 
-      <p>Proud parent of a young lady acing the UCF curriculum in Computer Science and an officer of both Theta Tau engineereing /eervice fraternity and Society of Sales Engineers officer. All of which is prelude to what will undoubtedly be a sterling professional career which starts at Microsoft /Seattle in the summoer of 2018.</p>
+      <p>Proud parent of a young lady acing the UCF Computer Science curriculum while also serving stints as officer in Theta Tau engineereing /service fraternity and Society of Sales Engineers. All of which is merely prelude to what will undoubtedly be a sterling professional career -- starting at Microsoft /Seattle,ummer, 2018.</p>
+  
+        </div>
+      </div>
 
     </section>
 

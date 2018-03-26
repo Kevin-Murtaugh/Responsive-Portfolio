@@ -49,7 +49,12 @@ h2,
 h3 {
   font-size: 22px;
 }
-
+/*
+img {
+  max-width: 33%;
+  height: auto;
+}
+*/
 /* header */
 
 #masthead {
@@ -61,14 +66,21 @@ h3 {
   color: #fff;
   background: #fff;
   border-bottom: 2px solid #ccc;
+  padding-top: 70px;   
 }
 
 #logo {
   float: left;
   width: 200px;
+  /*padding-left: 30px;  */  
+  /* added this line hoping to balance logo with masthead  */
+  /* fixes masthead but navbar still goes extra ~30px left  --leave that as good enough, for now*/
+  /* additional side effect is name is now off-center, so change from margin-let to padding-left & font from 20 to 16  */
+  /* this helps centgering slightly but returns box to hard left, so abandon the whole thing  */
   height: 90px;
   font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 20px;
+  font-size: 16px;
+  /* then jumbotron exposes name fit issue again so reduce back to 16px --& then back to 20px since junking Jumbotron */
   font-weight: 700;
   line-height: 90px;
   color: #fff;
@@ -84,7 +96,7 @@ nav {
 
 nav a {
   display: inline-block;
-  padding-left: 15px;
+  padding-left: 15px; /* change from 15px to 45px in hopes of balancing page, then back to 15px when name went off-center */
   margin-left: 15px;
   line-height: 18px;
   color: #999;
@@ -120,7 +132,7 @@ h3, h2 {
 /* main */
 
 #main-container {
-  padding-top: 130px;
+  padding-top: 35px;
   min-height: calc(100vh - 70px);
 }
 
@@ -132,7 +144,9 @@ h3, h2 {
   margin: 0 0 40px;
   background: #fff;
   border: 1px solid #ddd;
-}
+  padding-top: 10px;   
+} 
+/* add padding-top to ensure navbar slides under instead of over */
 
 /* portfolio page */
 
@@ -149,7 +163,8 @@ h3, h2 {
 }
 
 .work img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   border: 0 none;
   opacity: 0.8;
 }
@@ -215,3 +230,25 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+col-xs-12 {
+    height: 100px;
+    margin: Auto;
+    text-align: center;
+}
+
+col-m-8 {
+  height: 100px;
+  margin: Auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: blue;
+  }
+
+@media screen and (max-width: 480px) {
+    body {
+      background-color: yellow;
+    }
